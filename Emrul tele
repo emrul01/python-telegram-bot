@@ -1,0 +1,13 @@
+import telebot
+
+# Replace with your bot token
+BOT_TOKEN = '6978967045:AAEYqufPqfkNKMAyyosaZrhWIKWNmZ1m7WQ'
+
+bot = telebot.TeleBot(6978967045:AAEYqufPqfkNKMAyyosaZrhWIKWNmZ1m7WQ)
+
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.reply_to(message, 'Hello! I am a simple Telegram bot.')
+
+if __name__ == '__main__':
+    bot.polling()
